@@ -1,0 +1,591 @@
+/* The MacMillan Group custom styles
+========================================================*/
+
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:small;
+	color: #555;
+	line-height: 1.4em;
+	background: url(https://www.princeton.edu/chemistry/macmillan/images/bg.jpg) repeat-x #fff;
+}
+#wrappercontainer {
+	background:url(https://www.princeton.edu/chemistry/macmillan/images/header_bg.jpg) top center no-repeat;
+	width: 100%;
+	margin: 0 auto;
+	position:relative;
+}
+#wrapper {
+	/*width: 859px;*/
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+#toolbarcontainer {
+	position:absolute;
+	right: 0px;
+	top: 0px;
+	text-align:center;
+	z-index:100;
+}
+#headercontainer {
+	width: 859px;
+	position: relative;
+	margin: 0 auto;
+}
+#maincontainer {
+	width: 859px;
+	position: relative;
+	margin: 0 auto;
+	padding-bottom: 15px;
+}
+#logolink {
+	display: none;
+}
+/************
+  search
+  ***********/
+#searchbox, .search-form form {
+	border: 1px solid #566793;
+	padding: 1px 0 1px 0;
+	color: #566793;
+	width: 180px;
+}
+#searchbox .searchtext, #content .search-form form input.searchBox {
+	border: none;
+	background: none;
+	margin: 0;
+	padding:0;
+	width: 158px;
+	color: #566793;
+}
+#content .search-form form input.searchBox {
+	margin-left: 4px;
+}
+#searchbox input.submit, #content .search-form form input.go {
+	background: transparent url(https://www.princeton.edu/chemistry/macmillan/images/search-btn.png);
+	margin: 0;
+	padding: 0;
+}
+/**********
+Banner 
+************/
+
+#bannercontainer {
+	width: 400px;
+}
+#bannerphoto {
+	height: 368px;
+	width: 859px;
+	margin-bottom: 15px;
+	background: url(https://www.princeton.edu/chemistry/macmillan/images/home.jpg) no-repeat;
+	overflow: hidden;
+}
+#home #bannerphoto {
+}
+#david-macmillan #bannerphoto {
+	background-image: url(https://www.princeton.edu/chemistry/macmillan/images/about_img.jpg);
+}
+#research #bannerphoto {
+	background-image: url(group.jpg);
+}
+#publications #bannerphoto {
+	background-image: url(https://www.princeton.edu/chemistry/macmillan/images/pubs_img.jpg);
+}
+#people #bannerphoto {
+	background-image: url(https://www.princeton.edu/chemistry/macmillan/images/people.jpg);
+}
+#group-meetings #bannerphoto {
+	background-image: url(https://www.princeton.edu/chemistry/macmillan/images/meetings_img.jpg);
+}
+#resources #bannerphoto {
+	background-image: url(tubes.jpg);
+}
+
+#biju #bannerphoto {
+	background-image: url(publications.jpg);
+}
+
+#book #bannerphoto {
+	background-image: url(books.jpg);
+}
+
+#highlights #bannerphoto {
+	background-image: url(highlights.jpg);
+}
+
+
+
+#announcements #bannerphoto {
+	background-image: url(https://www.princeton.edu/chemistry/macmillan/images/research_img.jpg);
+}
+.search #bannerphoto {
+	background-image: url(https://www.princeton.edu/chemistry/macmillan/images/resources_img.jpg);
+}
+/*************
+  NAVALPHA 
+  **************/
+
+#navalphacontainer, #navbetacontainer {
+	font-weight:normal;
+}
+#navalphacontainer {
+	margin: 20px 0;
+	display: block;
+}
+#navalpha {
+	position: relative;
+	width: 859px;
+}
+#navalpha br {
+	display: none;
+}
+#navalphalinks ul {
+	padding-left: 10px;
+}
+#navalphalinks li {
+	display: inline;
+}
+#navalphalinks li a {
+	display: block;
+	float:left;
+	color: #fff;
+	padding: 3px 5px;
+	margin: 5px 16px;
+	text-decoration:none;
+}
+#navalphalinks li.first a {
+	margin-left: 0;
+}
+#navalphalinks li.last a {
+	margin-right: 0;
+	margin-left: 18px;
+}
+#navalphalinks ul li a:hover, 
+#navalphalinks ul li.selected a, 
+#navalphalinks ul li.parent a {
+	display: inline-block;
+	color: #011A5D;
+	background-color:#fff;
+}
+/***********
+navbeta  
+*************/
+
+#navbetacontainer {
+	text-align: right;
+	font-size: 110%;
+}
+#news #navbetacontainer,
+#resources #navbetacontainer {
+	display: none;
+}
+#navbeta li {
+	float: right;
+	margin-right: 15px;
+}
+#navbeta a {
+	color: #777;
+	text-decoration:none;
+}
+#navbeta .selected a, #navbeta a:hover {
+	color: #000;
+}
+
+#navbeta .disabled {
+	display: none;	
+}
+/***********
+BREADCRUMBS  
+*************/
+
+#breadcrumbscontainer {
+	display:none;
+}
+/*************
+Content
+****************/
+
+
+/*No sidebar on the page*/
+#wrappercontainer.nav-horizontal .subcontent-collapse #content {
+	width:100%;
+}
+/*If a sidebar is added by the user to the page */
+#wrappercontainer.nav-horizontal #content {
+	width:  565px;
+}
+/*No sidebar on the page*/
+#wrappercontainer.nav-vertical.nav-horizontal .subcontent-collapse #content {
+	width: 100%;
+}
+/*If a sidebar is added by the user to the page */
+#wrappercontainer.nav-vertical.nav-horizontal #content {
+	width: 565px;
+	float: left
+}
+/*No sidebar on the page*/
+#wrappercontainer.nav-vertical .subcontent-collapse #content {
+	width: 100%;
+}
+/*If a sidebar is added by the user to the page */
+#wrappercontainer.nav-vertical #content {
+	width: 565px;
+}
+h2 {
+	font-size: 150%;
+	color:#2B2680;
+	font-weight: bold;
+	padding: 10px 0;
+	margin-bottom:10px;
+	border-bottom: 1px solid #ccc;
+}
+h3 {
+	font-size: 1.2em;
+	color: #333;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+
+
+p {
+	margin-bottom: 15px;	
+}
+.header-component h3 {
+	font-size: 130%;
+	color: #888;
+}
+#content a,
+#subcontent a{
+	color: #002589;
+	text-decoration:none;
+}
+#content a:hover,
+#subcontent a:hover {
+	text-decoration:underline;
+}
+#content p, #content .row {
+	padding: 0 0 1em 0;
+}
+.byline {
+	color: #777;	
+}
+.byline .author {
+	display: none;	
+}
+
+.news-archive-month-nav {
+margin: 1em 0;
+}
+
+.news-archive-month-nav li {
+margin-right: 1em;
+}
+/*********
+	subcontent 
+**********/
+
+#subcontent {
+	float: right;
+	width: 260px;
+}
+#subcontent h3 {
+	font-size: 1.1em;
+	color: #333;
+	margin-bottom: 5px;
+	font-weight: bold;	
+}
+
+
+/************
+home
+*************/
+#home #content p {
+	padding-bottom: 0;
+	margin-bottom: 1.5em;	
+}
+#home .news-comp .entry .byline {
+	margin-bottom: 0;
+}
+#home .viewall {
+	font-weight: bold;
+}
+#home #content h2{
+	color: #444;	
+}
+#home #content h3 {
+	background:none repeat scroll 0 0 #E7ECF7;
+	border-bottom:1px solid #DFE4F2;
+	border-left:2px solid #C4CEE9;
+	color:#444;	
+	margin-right:10px;
+	padding:3px 5px 2px;
+	text-align:center;
+	width:100px;	
+}
+#home #subcontent {
+	line-height: 1.31em;
+}
+#home #subcontent h3 {
+	font-size: 130%;
+	color:#444;
+	font-weight: bold;
+	padding: 10px 0;
+	margin-bottom:10px;
+	border-bottom: 1px solid #ccc;
+}
+
+#home #subcontent img {
+	float: left;
+	clear: left;
+	margin: 0 10px 10px 0;
+}
+
+/*********
+	david macmillan page
+	*********/
+	
+	#david-macmillan #content strong {
+	background-color:#E7ECF7;
+	border-bottom:1px solid #DFE4F2;
+	border-left:2px solid #C4CEE9;
+	color:#3E589D;
+	float:left;
+	margin-right:10px;
+	padding:3px 5px 2px;
+	text-align:center;
+	width:100px;
+}
+#david-macmillan #content div.picture-component {
+	float:left;
+	margin-right:15px;
+	width:410px;
+	clear: none;
+}
+/*********
+Resources 
+**********/
+	
+/*#resources #content div.picture-component {
+	float: left;
+	width: 120px;
+	clear: none;
+	margin-right: 15px;
+}*/
+#resources #content img {
+	margin: 0 18px 18px 0;
+	float: left;
+	width: 125px;
+	height: 162px;
+}
+#resources #content ul {
+	margin-bottom: 15px;
+	margin-left: 1em;
+	list-style-type:none;
+}
+/*#resources #content li {
+		
+	height: 90px;
+}*/
+
+/**********
+Group Meetings
+***********/
+#group-meetings #content em {
+	display:block;
+	float: right;
+	line-height: 1.25em;	
+}
+#group-meetings #content h3 {
+	font-size:110%;	
+}
+#group-meetings #content .body p {
+	border-bottom: 1px solid #ededed;
+	height: 1.25em;
+}
+
+#group-meetings p a {
+	padding-left:20px;
+	display:block;
+	float: left;
+	line-height: 1.25em;
+}
+#group-meetings p a[href$=".pdf"] {
+	background: url(https://www.princeton.edu/common/images/document-pdf-text.png) no-repeat left 0;
+}
+
+/*********
+People
+**********/
+
+#people #content .rxml-component {
+	width: 100%;
+	clear: both;
+}
+#people.pictures #content .rxml-component {
+	text-align: center;
+}
+
+#people #content .picture-component {
+	float:left;
+	margin-bottom:15px;
+	margin-right:30px;
+	width:180px;
+	overflow: hidden;
+	clear: none;
+}
+
+.people #content .picture-component div {
+	width: inherit !important;
+	float: none;
+}
+
+.people #content .picture-component div div {
+	display: inline;
+}
+
+.people #content .picture-component div div.body {
+	display: block;
+	padding-top: .5em;
+}
+
+#people #content .picture-component img {
+	width: 180px;
+	height: 240px;
+}
+.people #content .picture-component .cell br {
+	display: none;
+}
+
+#people #content h3 {
+	font-size: 120%;	
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+#people.former-members #content .picture-component {
+	float:none;
+	margin-bottom:0;
+	margin-right:0;
+	width: 100%;
+	overflow: hidden;
+	clear: none;
+}
+
+#people.former-members #content h2 {
+	margin-bottom:1.5em;
+}
+
+.ccm-alum {
+	border-bottom: 1px solid #eee;
+	height: 1.5em;
+	margin-bottom: 1em;
+}
+.ccm-alum-left {
+	float:left;
+}
+.ccm-alum-right {
+	float:right;
+}
+
+/*********
+Publications
+***********/
+/*#publications #content .body {
+	float: left;	
+	clear: right;
+	width: 720px;
+	padding-top: 8px;
+	
+}
+#publications #content .left {
+	height: 150px;	
+	clear: left;
+	padding: 20px;
+}
+
+#publications #content .picture-component{
+	border:2px solid #D9DFED;
+	margin-bottom:15px;
+	width:850px;
+	background: repeat-x url("/chemistry/macmillan/publications/publications-bg.gif");
+}
+#publications #content .body  p {
+	height: 115px;	
+	
+}
+
+#publications #content .body p + p {
+	height: auto;	
+}
+#publications #content .body a {
+	font-size: 110%;
+	font-weight: bold;
+}*/
+
+#publications .picture-component-0 {
+background-color: #eff3fb;
+border: 2px solid #D9DFED;
+border-top: 4px solid #D9DFED;
+border-bottom: 1px solid #D9DFED;
+padding: 10px;
+}
+
+#publications .picture-component-0 div.left {
+margin-bottom: 0;
+margin-right: 20px;
+}
+
+#publications .picture-component-0 div.left img {
+width: 59px;
+height: 76px;
+}
+
+#publications #content .picture-component-0 .row,
+#publications #content .picture-component-0 p {
+padding-bottom: 0;
+}
+
+#publications .picture-component-2 {
+border: 2px solid #D9DFED;
+border-top: none;
+padding: 15px 10px;
+margin-bottom: 15px;
+}
+
+#publications .picture-component-2 div.left {
+    float: none;
+    margin: 0 auto;
+}
+
+/*********
+Footer
+**********/
+
+#footercontainer {
+	background: #001A5D;
+	padding:15px 0;
+	width:100%;
+	clear: both;
+}
+#footer {
+	width: 859px;
+	margin: 0 auto;
+	color: #fff;
+	font-size: .875em;
+}
+#footer img {
+	float: right;
+	margin-top: 15px;
+}
+#footer a {
+	color: #fff;
+}
+#footer a:hover {
+	text-decoration: none;
+}
+
+/* new content added at airport */
